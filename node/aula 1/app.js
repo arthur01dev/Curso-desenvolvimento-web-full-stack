@@ -1,5 +1,7 @@
-const {Pessoa} = require('./mod1');
+const path = require('path')
+const {Pessoa, falaNome} = require('./mod1');
 
-const p1 = new Pessoa('Arthur');
+const p1 = new Pessoa('Arthur', 'Rodrigues');
 
-console.log(p1)
+console.log(falaNome());
+console.log(p1);
