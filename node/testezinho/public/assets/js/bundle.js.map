@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":"AAGIA,MAAM,UAADC,OAHE,SAGa","sources":["webpack://testezinho/./src/index.js"],"sourcesContent":["let nome = 'arthur';\r\n\r\nfunction fala(nome) {\r\n    alert(`Olá eu ${nome} estou usando o bundle`)\r\n}\r\n\r\nfala(nome);"],"names":["alert","concat"],"sourceRoot":""}
