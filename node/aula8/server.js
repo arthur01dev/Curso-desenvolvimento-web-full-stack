@@ -24,7 +24,7 @@ app.get('/testes/:idUsuarios?/:parametro?', (requisicao, resposta) => {
 
 app.post('/', (requisicao, resposta) => {
     console.log(requisicao.body);
-    resposta.send(`Oque você me enviou foi: ${requisicao.body.sobrenome}`);
+    resposta.send(`Oque você me enviou foi: ${requisicao.body.nome} ${requisicao.body.sobrenome}`);
 })
 
 app.listen(3300, () => {
