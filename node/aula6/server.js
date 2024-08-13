@@ -9,7 +9,7 @@ const app = express();
 // http://meusite.com/sobre <- GET -> Entregue a página /sobre
 // http://meusite.com/contato <- GET -> Entregue a página /contato
 
-app.get('/', (requisição, resposta) => {
+app.get('/', (requisição, resposta) => {// Faz um Get do nosso formulario 
     resposta.send(`
         <form action="/" method="POST">
         Nome: <input type="text" name="nome">
@@ -18,7 +18,7 @@ app.get('/', (requisição, resposta) => {
         `);
 });
 
-app.post('/', (reqição, resposta) => {
+app.post('/', (reqição, resposta) => {// Cria a resposta para nosso fomulario respondido a cima 
     resposta.send('Recebi o formulario');
 })
 
@@ -27,7 +27,7 @@ app.get('/contato', (requisição, resposta) => {
 
 });
 
-app.listen(3000, () => {
+ app.listen(3000, () => {// Cria um servidor local 
     console.log('Acessar http://localhost:3000')
     console.log('Servidor executando na porta 3000');
 });
